@@ -1,0 +1,30 @@
+*{
+    margin:  0;
+    padding: 0;
+    
+}
+
+.flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 5em;
+}
+
+@media (max-width: 576px) {
+  .flex{
+    flex-direction: column;
+  }
+}
+@media (min-width: 577px) and (max-width: 768px) {
+  .flex{
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 769px) {
+   .flex{
+    flex-direction: column;
+  }
+}
+

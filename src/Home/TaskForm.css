@@ -1,0 +1,68 @@
+.taskForm {
+  width: 50%;
+  margin: 1em auto;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  background-color: white;
+}
+
+.head-modify {
+  color: rgb(248, 101, 126);
+}
+
+.input-modify {
+  width: 90%;
+  margin: 0.5em 0;
+  padding: 0.5em;
+}
+
+.primary-btn-modify {
+  width: 100%;
+  margin-top: 1em;
+}
+
+small {
+  display: block;
+}
+
+textarea {
+  width: 90%;
+  height: 12vh;
+  margin: 0.5em 0;
+  padding: 1em;
+  font-family: Poppins;
+}
+
+@media (max-width: 576px) {
+ .taskForm {
+  width: 80%;
+  margin: 1em auto;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  background-color: white;
+}
+}
+
+
+@media (min-width: 577px) and (max-width: 768px) {
+  .taskForm {
+    max-width: 100%;
+    margin: 1em auto;
+  }
+}
+
+
+@media (min-width: 769px) {
+  .taskForm {
+    max-width: 100%;
+    margin: 1em auto;
+  }
+}

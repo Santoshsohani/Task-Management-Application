@@ -1,0 +1,94 @@
+/* Default styles */
+.taskdetails {
+  width: 50%;
+  max-width: 400px;
+  margin: 1em auto;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  text-align: center;
+}
+
+.taskdetails :first-child {
+  color: rgb(255, 72, 103);
+  font-size: 2rem;
+}
+
+.taskdetails :nth-child(2) {
+  color: rgb(0, 0, 0);
+  font-size: 1.5rem;
+}
+
+.pendingDetails,
+.completedDetails,
+.dueDetails {
+  color: white;
+  padding: 0.75em;
+  border-radius: 0.75em;
+  text-align: center;
+  cursor: pointer;
+  width: 80%;
+  margin: 0.25em 0;
+  background: black;
+}
+
+.pendingDetails{
+  background-color: #6A1B4D;
+}
+.completedDetails{
+  background: #00D84A;
+}
+.dueDetails{
+  background: #242B2E;
+}
+
+/* Media Queries for Responsive Design */
+
+/* Small screens (phones) */
+@media (max-width: 576px) {
+  .taskdetails {
+    width: 80%;
+  }
+  
+  .taskdetails :first-child {
+    font-size: 1.5rem;
+  }
+  
+  .taskdetails :nth-child(2) {
+    font-size: 1.2rem;
+  }
+}
+
+/* Medium screens (tablets) */
+@media (min-width: 577px) and (max-width: 992px) {
+  .taskdetails {
+    max-width: 80%;
+  }
+  
+  .taskdetails :first-child {
+    font-size: 2.5rem;
+  }
+  
+  .taskdetails :nth-child(2) {
+    font-size: 2rem;
+  }
+}
+
+/* Large screens (laptops/desktops) */
+@media (min-width: 993px) {
+  .taskdetails {
+    max-width: 50%;
+  }
+  
+  .taskdetails :first-child {
+    font-size: 3rem;
+  }
+  
+  .taskdetails :nth-child(2) {
+    font-size: 2.5rem;
+  }
+}

@@ -1,0 +1,83 @@
+/* Styles for the task card (default desktop styling) */
+.card {
+    color: white;
+    background: linear-gradient(45deg, #FF9F4A, #FF3C83);
+    width: 30vw;
+    text-align: center;
+    border-radius: 10px;
+    padding: 1em;
+    margin: 1em 0.5em;
+}
+
+/* Styles for a container of pending tasks (default desktop styling) */
+.overdue {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Styles for the card's heading (default desktop styling) */
+.card > h1 {
+    color: white;
+}
+
+/* Styles for secondary buttons (default desktop styling) */
+.secondary-btn {
+    color: white;
+    background-color: #242B2E;
+    width: 250px;
+    height: 35px;
+    font-size: 20px;
+    border-radius: 8px;
+}
+
+/* Flex container styles (default desktop styling) */
+.flex {
+    display: flex;
+}
+
+/* Heading styles (default desktop styling) */
+.heading {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+/* Media Queries for Responsive Design (for smaller devices) */
+
+/* Small screens (phones) */
+@media (max-width: 576px) {
+    /* Adjust styles for small screens here */
+    .card {
+        width: 80vw;
+    }
+    
+    .pendingTask {
+        flex-direction: column;
+    }
+    
+    .card > h1 {
+        font-size: 1.5rem;
+    }
+    
+    .secondary-btn {
+        width: 90%;
+    }
+}
+
+/* Medium screens (tablets) */
+@media (min-width: 577px) and (max-width: 992px) {
+    /* Adjust styles for medium screens here */
+    .card {
+        width: 50vw;
+    }
+    
+    .card > h1 {
+        font-size: 2rem;
+    }
+    
+    .secondary-btn {
+        width: 70%;
+    }
+}
